@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="output.css">
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+</head>
+<body>
+  <div class="bg-[hsl(234,29%,20%)] flex justify-center items-center h-screen"><!--blue background-->
+    <div class="bg-[hsl(0,0%,100%)] flex items-center rounded-2xl p-5" id="container"><!--white background-->
+      <div class="flex-1 px-7 flex flex-col justify-evenly mr-6"><!--left side div-->
+        <p class="text-5xl font-bold text-[hsl(235,18%,26%)] mb-8">Stay updated!</p>
+        <p class="mb-8">Join 60,000+ product managers receiving monthly <br> updates on: </p>
+        <div class="flex flex-col gap-2 mb-5">
+          <p class="flex gap-3 items-center"><img src="/assets/images/icon-success.svg" alt="icon-success" class="h-5">Product discovery and building what matters</p>
+          <p class="flex gap-3 items-center"><img src="/assets/images/icon-success.svg" alt="icon-success" class="h-5">Measuring to ensure updates are a success</p>
+          <p class="flex gap-3 items-center"><img src="/assets/images/icon-success.svg" alt="icon-success" class="h-5">And much more!</p>
+        </div>
+        <!--form and button div-->
+          <!-- Sign-up form start -->
+          <form action="#" class="flex flex-col gap-2">
+            <label for="Email" class="text-xs text-[hsl(235,18%,26%)]">Email address</label>
+            <input type="email" name="Email" placeholder="email@company.com" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$
+            " class="border-2 py-3 rounded-lg pl-3 focus:border-gray-200 focus:outline-none" required>
+            <!-- <input type="submit" value="Subscribe to monthly newsletter" class="bg-[hsl(235,18%,26%)] py-3 px-10 rounded-lg text-white cursor-pointer mt-2" id="submit-btn"> -->
+            <button type="submit" class="bg-[hsl(235,18%,26%)] py-3 px-10 rounded-lg text-white cursor-pointer mt-2" id="submit-btn">Subscribe to monthly newsletter</button>
+          </form>
+          <!-- Sign-up form end -->
+          <!-- <button type="submit">Subscribe to monthly newsletter</button> -->
+      </div>
+      <div><!--right side div-->
+        <img src="/assets/images/illustration-sign-up-desktop.svg" alt="illustration-sign-up-desktop">
+      </div>
+      
+    </div>
+
+    <div class="hidden" id="thank-you-container">
+      <div class="bg-[hsl(0,0%,100%)] flex flex-col rounded-2xl p-10 gap-5">
+        <!-- Success message start -->
+        <div class="flex flex-col items-start gap-5">
+          <img src="/assets/images/icon-success.svg" alt="icon-success" class="h-12">
+          <p class="text-5xl text-[hsl(235,18%,26%)] font-bold">Thanks for <br> subscribing!</p>
+        </div>
+        <p class="text-sm"> A confirmation email has been sent to <br> <span class="text-[hsl(235,18%,26%)] font-bold">ash@loremcompany.com</span>. Please open it and click <br> the button inside to confirm your subscription.</p>
+        <button type="reset" class="bg-[hsl(235,18%,26%)] py-3 px-10 rounded-lg text-white cursor-pointer" id="dismiss-message">Dismiss Message</button>
+      </div>
+    </div>
+    
+  </div>
+
+  <!-- Success message end -->
+  <script src="/app.js"></script>
+</body>
+</html>
